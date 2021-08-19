@@ -21,7 +21,7 @@ class HomePage extends StatelessWidget {
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
                   child: Text(
-                    "Am",
+                    "sunil image",
                     style: TextStyle(
                         fontSize: 20,
                         fontWeight: FontWeight.bold,
@@ -40,7 +40,18 @@ class HomePage extends StatelessWidget {
                 leading: Icon(Icons.home, color: Colors.pink),
                 title: Text("HOmePage"),
               ),
-            )
+            ),
+            InkWell(
+              onTap: () {},
+              child: ListTile(
+                onTap: () {
+                  Navigator.popAndPushNamed(context, "/profile");
+                },
+                leading: Icon(Icons.person, color: Colors.black),
+                title: Text("My profile"),
+              ),
+            ),
+            Divider(),
           ],
         ),
       ),
