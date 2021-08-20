@@ -29,11 +29,11 @@ class HomePage extends StatelessWidget {
             UserAccountsDrawerHeader(
               decoration: BoxDecoration(color: Colors.redAccent),
               accountName: Text(
-                "sunilkumargupta",
-                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+                "Name :sunilkumargupta",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               accountEmail: Text(
-                "sunilkumar@gmail.com",
+                "Email:sunilkumar@gmail.com",
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               currentAccountPicture: GestureDetector(

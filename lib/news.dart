@@ -6,7 +6,7 @@ class News extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String newsdetail = """
-    this is the news part to see when we click on the new 
+    this is the news part to see when we click on the news 
     which is present in the drawer """;
     return Scaffold(
       appBar: AppBar(
