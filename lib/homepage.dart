@@ -5,6 +5,9 @@ class HomePage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    String text1 = """Welcome to the navigation drawer pages\t
+    so , if you have drawer and want to navigate from one page\t
+    to another pages then this is the right choice to do""";
     return Scaffold(
       appBar: AppBar(
         title: Text(
@@ -12,6 +15,13 @@ class HomePage extends StatelessWidget {
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
         ),
         backgroundColor: Colors.black45,
+      ),
+      body: Text(
+        text1,
+        style: TextStyle(
+          fontSize: 30,
+          fontWeight: FontWeight.bold,
+        ),
       ),
       drawer: Drawer(
         child: ListView(
