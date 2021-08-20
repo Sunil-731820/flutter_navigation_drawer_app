@@ -7,25 +7,35 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-          title: Text(
-        "Drawer Nagivation App",
-        style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-      )),
+        title: Text(
+          "Drawer Nagivation App",
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+        ),
+        backgroundColor: Colors.black45,
+      ),
       drawer: Drawer(
         child: ListView(
           children: [
             UserAccountsDrawerHeader(
-              decoration: BoxDecoration(color: Colors.pink),
-              accountName: Text("sunilkumargupta"),
-              accountEmail: Text("sunilkumar@gmail.com"),
+              decoration: BoxDecoration(color: Colors.redAccent),
+              accountName: Text(
+                "sunilkumargupta",
+                style: TextStyle(fontSize: 12, fontWeight: FontWeight.bold),
+              ),
+              accountEmail: Text(
+                "sunilkumar@gmail.com",
+                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+              ),
               currentAccountPicture: GestureDetector(
                 child: CircleAvatar(
-                  child: Text(
-                    "sunil image",
-                    style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.pink),
+                  child: Center(
+                    child: Text(
+                      "sunil image",
+                      style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.bold,
+                          color: Colors.black45),
+                    ),
                   ),
                   backgroundColor: Colors.white,
                 ),
@@ -37,10 +47,14 @@ class HomePage extends StatelessWidget {
                 onTap: () {
                   Navigator.popAndPushNamed(context, "/home");
                 },
-                leading: Icon(Icons.home, color: Colors.pink),
-                title: Text("HOmePage"),
+                leading: Icon(Icons.home, color: Colors.black45),
+                title: Text(
+                  "HomePage",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
+            Divider(),
             InkWell(
               onTap: () {},
               child: ListTile(
@@ -48,7 +62,27 @@ class HomePage extends StatelessWidget {
                   Navigator.popAndPushNamed(context, "/profile");
                 },
                 leading: Icon(Icons.person, color: Colors.black),
-                title: Text("My profile"),
+                title: Text(
+                  "My profile",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
+              ),
+            ),
+            Divider(),
+            InkWell(
+              onTap: () {},
+              child: ListTile(
+                onTap: () {
+                  Navigator.popAndPushNamed(context, "/news");
+                },
+                leading: Icon(
+                  Icons.shopping_basket_sharp,
+                  color: Colors.black45,
+                ),
+                title: Text(
+                  "News",
+                  style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                ),
               ),
             ),
             Divider(),
