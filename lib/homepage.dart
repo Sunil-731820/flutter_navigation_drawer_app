@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     String text1 = """Welcome to the navigation drawer pages\t
     so , if you have drawer and want to navigate from one page\t
-    to another pages then this is the right choice to do""";
+    to another pages then this is the right choice to do.""";
     return Scaffold(
       appBar: AppBar(
         title: Text(
